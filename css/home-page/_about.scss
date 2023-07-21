@@ -1,0 +1,69 @@
+#about-header {
+    background-image: url("img/hero.png");
+    height: 40vh;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 14px;
+}
+#about-head{
+display: flex;
+align-items: center;
+
+div{
+  padding-left: 40px;
+}
+
+ img{
+  width: 50%;
+  height: auto;
+}
+
+}
+#about-app{
+  text-align: center;
+
+  .video{
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+
+    video{
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+  }
+}
+
+
+@media (max-width:477px) {
+  
+#about-head {
+
+    flex-wrap: wrap;
+
+
+}
+    #about-head img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+#about-head div {
+    padding-left: 0px;
+}
+#about-app .video {
+    width: 100%;
+}
+}

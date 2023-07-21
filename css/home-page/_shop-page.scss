@@ -1,0 +1,90 @@
+#page-header {
+  background-image: url("img/cisco.png");
+  height: 40vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 14px;
+
+
+  h2,
+  p {
+color: #aaa;
+    
+  }
+}
+#pagination{
+  text-align: center;
+
+  a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px ;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+
+
+  }
+  .icon{
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+// -------single product
+
+#prodetails{
+  display: flex;
+  margin-top: 20px;
+  .singleimg{
+    width: 40%;
+    margin: 50px;
+    .gruop-img{
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+
+      .small-img{
+        flex-basis: 24%;
+
+      }
+    }
+  }
+  .single-prodetalis{
+    width: 50%;
+    padding-top: 80px;
+
+    h4{
+      padding: 40px 0 20px 0;
+    }
+    h2{
+      font-size: 26px;
+    }
+  }
+  select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+  }
+  input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    &:focus{
+      outline: none;
+    }
+  }
+  .normal{
+    background-color: #088178;
+    color: #fff;
+
+  }
+  span{
+    line-height: 25px;
+  }
+}

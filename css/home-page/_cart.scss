@@ -1,0 +1,159 @@
+#cart-header{
+    background-image: url("img/cisco.png");
+  height: 40vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 14px;
+}
+
+
+
+#cart  {
+  overflow-x: auto;
+
+  table{
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+
+
+  thead{
+    border: 1px solid #e2e9e1;
+    border-right: none;
+    border-left: none;
+
+    td{
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 13px;
+      padding: 18px 0;
+
+
+    }
+  }
+
+  img{
+    width:70px;
+  }
+  td:nth-child(1){
+    width: 100px;
+    text-align: center;
+
+  }
+  tbody{
+    td{
+      font-size: 15px;
+    }
+    tr{
+      td{
+        padding-top:15px;
+      }
+    }
+  }
+}
+  td:nth-child(2){
+    width: 150%;
+    text-align: center;
+
+  }
+    td:nth-child(3){
+    width: 250%;
+    text-align: center;
+
+  }
+    td:nth-child(4){
+    width: 150%;
+    text-align: center;
+
+  }
+    td:nth-child(5){
+    width: 150%;
+    text-align: center;
+
+    input{
+      width: 70px;
+      padding: 10px 5px 10px 15px ;
+    }
+
+  }
+    td:nth-child(6){
+    width: 150%;
+    text-align: center;
+
+  }
+}
+
+#cart-add{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  #coupon{
+    width: 50%;
+    margin-bottom: 30px;
+
+    h3{
+      padding-bottom: 15px;
+    }
+      input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+  }
+  button{
+    padding: 10px  20px;
+
+  }
+  }
+
+  #subtotal{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+
+    table{
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 20px;
+
+      td{
+        width: 50%;
+        border: 1px solid #e2e9e1;
+        padding: 10px;
+        font-size: 13px;
+      }
+    }
+  }
+  h3{
+    padding-bottom: 15px;
+  }
+
+}
+
+
+@media (max-width:477px) {
+  #cart {
+    overflow-x: auto;
+    overflow-x: scroll;
+}
+#cart-add {
+  flex-direction: column;
+
+}
+#cart-add #coupon {
+    width: 100%;
+    margin-bottom: 30px;
+}
+  #cart-add #subtotal {
+    width: 100%;
+    margin-bottom:0px;
+    
+}
+}
